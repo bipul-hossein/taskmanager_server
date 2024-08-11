@@ -20,7 +20,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     await client.connect();
-    const db = await client.db('taskmaster');
+    const db = await client.db('taskmanager_server');
     const tasksCollection = db.collection('tasks');
 
     console.log('Successfully connected to MongoDB!');
